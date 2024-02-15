@@ -1,0 +1,40 @@
+
+    <div class="modal modal-buy is-hidden" data-modal="buy">
+        <button class="modal-buy__close btn js-modal-close">
+            <svg class="modal-buy__icon" width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-close-1"></use>
+            </svg>
+        </button>
+        <p class="modal-buy__title">Buy now</p>
+
+        <form class="buy-form">
+
+            <ul class="buy-checklist list">
+                <li class="buy-checklist__item">
+                    <input class="buy-checklist__input visually-hidden" type="checkbox" name="buy-icecream" id="icecream" value="icecream"/>
+                    <label class="buy-checklist__label" for="icecream">ice cream</label>
+                </li>
+                <li class="buy-checklist__item">
+                    <input class="buy-checklist__input buy-checklist__input--yellow visually-hidden" type="checkbox" name="buy-icecream" id="icecoffee" value="icecoffee" checked />
+                    <label class="buy-checklist__label buy-checklist__label--yellow" for="icecoffee">ice coffee</label>
+                </li>
+                <li class="buy-checklist__item">
+                    <input class="buy-checklist__input buy-checklist__input--brown  visually-hidden" type="checkbox" name="buy-icecream" id="milkshake" value="milkshake"/>
+                    <label class="buy-checklist__label buy-checklist__label--brown" for="milkshake">milkshake</label>
+                </li>
+            </ul>
+
+
+
+
+            <div class="buy-form__inputs">
+                <input type="text" class="buy-form__input" id="buy-name" name="name" pattern="[^\d]+" placeholder="Name" required
+                    minlength="2">
+                <input type="tel" class="buy-form__input" id="buy-tel" name="tel" pattern="[-+\d]+" placeholder="Phone" required>
+                <textarea class="buy-form__comment" name="comment" id="buy-comment" placeholder="Comment"></textarea>
+                <button type="submit" class="buy-form__submit btn">Submit</button>
+            </div>
+        </form>
+
+    
+    </div>
